@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > .navbar {
+    padding: 2rem 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > .links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      > .homeLogo {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        position: relative;
+        text-decoration: none;
+        > .square {
+          position: absolute;
+          height: 40px;
+          width: 40px;
+          border: 0.3rem solid #fff;
+          position: absolute;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+        }
+        > .logoSquare1 {
+          left: 0;
+        }
+        > .logoSquare2 {
+          left: 2.4em;
+        }
+      }
+      > .navUl {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        > li {
+          list-style: none;
+          > a {
+            text-decoration: none;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: -0.1rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
