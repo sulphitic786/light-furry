@@ -1,6 +1,10 @@
 let mainSliderContainer = document.querySelector('.sliderContainer');
 let mainSliderBtnsContainer = document.querySelector('.sliderbtnContainer');
-
+let nextBtn = document.getElementById('nextBtn');
+let prevBtn = document.getElementById('prevBtn');
+let slides = document.getElementsByClassName("slide");
+let miniBtn = document.querySelectorAll(".sliderBtn");
+let slideIndex = 1;
 
 let banners = [
     {
@@ -16,7 +20,7 @@ let banners = [
 
     },
     {
-        'img': 'https://www.theaureview.com/wp-content/uploads/2021/10/far-cry-6-benchmark-cpu-bottleneck.jpeg',
+        'img': 'https://cdn2.unrealengine.com/tetra-preorder-standard-edition-epic-store-landscape-2560x1440-2560x1440-430970417.jpg',
         'name': 'Far Cry 6',
         'price': '$36.00'
 
@@ -39,12 +43,6 @@ banners.forEach((banner, index) => {
 
 });
 
-
-let nextBtn = document.getElementById('nextBtn');
-let prevBtn = document.getElementById('prevBtn');
-let slides = document.getElementsByClassName("slide");
-let miniBtn = document.querySelectorAll(".sliderBtn");
-let slideIndex = 1;
 nextBtn.addEventListener('click', () => { showSlides(slideIndex += 1); });
 prevBtn.addEventListener('click', () => { showSlides(slideIndex += -1); });
 
@@ -62,7 +60,7 @@ function showSlides(n) {
 showSlides(slideIndex);
 
 
-// setInterval(() => {
-//     showSlides(slideIndex += 1);
-//     console.log('hi')
-// }, 5000);
+setInterval(() => {
+    showSlides(slideIndex += 1);
+    console.log('hi')
+}, 5000);
