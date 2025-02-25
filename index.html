@@ -36,19 +36,24 @@
             <div class="other">
                 <div class="searchDiv">
                     <form action="" method="post">
-                        <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="search" name="searchBox" id="searchBox">
+                        <button id="searchBtn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="search" name="searchBox" id="searchBox" placeholder="search">
                     </form>
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Select Option</button>
-                        <div class="dropdown-content">
-                            <a href="#">Option 1</a>
-                            <a href="#">Option 2</a>
-                            <a href="#">Option 3</a>
-                        </div>
-                    </div>
-                    <button type="button"><a href="#">Login</a></button>
                 </div>
+                <div class="drop_down_menu">
+                    <div class="text_content">
+                        <div class="select">
+                            <span class="selected">Language</span>
+                            <div class="caret"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                        <ul class="options">
+                            <li class="option active" value="Eng">Eng</li>
+                            <li class="option" value="Fr">Fr</li>
+                            <li class="option" value="De">De</li>
+                        </ul>
+                    </div>
+                </div>
+                <button id="loginBtn" type="button"><a href="#">Login</a></button>
             </div>
         </nav>
     </header>

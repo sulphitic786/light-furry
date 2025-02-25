@@ -9,6 +9,20 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #252525;
+  background-image: linear-gradient(
+    to left bottom,
+    #2c1936,
+    #2d1d37,
+    #2d2037,
+    #2e2438,
+    #2f2738,
+    #2e2836,
+    #2e2835,
+    #2d2933,
+    #2a282f,
+    #28272c,
+    #262528,
+    #242424
+  );
   font-family: "Ubuntu", serif;
 }
