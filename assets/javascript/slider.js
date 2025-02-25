@@ -1,11 +1,5 @@
 let mainSliderContainer = document.querySelector('.sliderContainer');
 let mainSliderBtnsContainer = document.querySelector('.sliderbtnContainer');
-let nextBtn = document.getElementById('nextBtn');
-let prevBtn = document.getElementById('prevBtn');
-let slides = document.getElementsByClassName("slide");
-let miniBtn = document.querySelectorAll(".sliderBtn");
-let slideIndex = 1;
-
 let banners = [
     {
         'img': 'https://images2.alphacoders.com/520/thumb-1920-520246.jpg',
@@ -43,6 +37,12 @@ banners.forEach((banner, index) => {
 
 });
 
+
+let nextBtn = document.getElementById('nextBtn');
+let prevBtn = document.getElementById('prevBtn');
+let slides = document.getElementsByClassName("slide");
+let miniBtn = document.querySelectorAll(".sliderBtn");
+let slideIndex = 1;
 nextBtn.addEventListener('click', () => { showSlides(slideIndex += 1); });
 prevBtn.addEventListener('click', () => { showSlides(slideIndex += -1); });
 
@@ -62,5 +62,4 @@ showSlides(slideIndex);
 
 setInterval(() => {
     showSlides(slideIndex += 1);
-    console.log('hi')
 }, 5000);

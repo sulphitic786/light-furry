@@ -5,7 +5,6 @@ let createNewElement = ([elemName, elemClass = null, elemParent, elemContent = n
 			newElement.classList.add(className);
 		});
 	} else if (typeof elemClass === "string") {
-		console.log(elemClass);
 		newElement.classList.add(elemClass);
 	}
 	if (elemContent != null) {
