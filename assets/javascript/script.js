@@ -12,3 +12,7 @@ options.forEach((option) => {
 showAllBtn.addEventListener("click", (e) => {
     dropDownOption.classList.toggle("show");
 });
+
+let copyRight = document.querySelector('.copyrightText');
+let currentYear = new Date().getFullYear();
+copyRight.innerHTML = `&copy;${currentYear}<br/>Unnamed`;
